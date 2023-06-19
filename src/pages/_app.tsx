@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { globalCss } from "../../stitches.config";
 
+// Apply global styles: https://stitches.dev/docs/styling#global-styles
 const globalStyles = globalCss({
   body: {
     background: "$surface",

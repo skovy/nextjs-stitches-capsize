@@ -1,7 +1,7 @@
 import { Stack } from "@/components/Stack";
 import { Inter } from "next/font/google";
 import { styled } from "../../stitches.config";
-import { Text } from "../components/Text";
+import { Text } from "@/components/Text";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,21 +11,11 @@ export default function Home() {
   return (
     <Main className={inter.className}>
       <Stack>
-        <Text as="h1" size="xlarge">
-          {content}
-        </Text>
-        <Text as="p" size="large">
-          {content}
-        </Text>
-        <Text as="p" size="medium">
-          {content}
-        </Text>
-        <Text as="p" size="small">
-          {content}
-        </Text>
-        <Text as="p" size="xsmall">
-          {content}
-        </Text>
+        <Text size="xlarge">{content}</Text>
+        <Text size="large">{content}</Text>
+        <Text size="medium">{content}</Text>
+        <Text size="small">{content}</Text>
+        <Text size="xsmall">{content}</Text>
       </Stack>
     </Main>
   );
