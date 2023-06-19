@@ -1,29 +1,39 @@
 import { Stack } from "@/components/Stack";
 import { Inter } from "next/font/google";
+import { styled } from "../../stitches.config";
 import { Text } from "../components/Text";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const content = "Hello, from Next.js, Stitches, and Capsize!";
+
   return (
-    <main className={inter.className}>
+    <Main className={inter.className}>
       <Stack>
         <Text as="h1" size="xlarge">
-          Hello, from Next.js, Stitches, and Capsize!
+          {content}
         </Text>
         <Text as="p" size="large">
-          Hello, from Next.js, Stitches, and Capsize!
+          {content}
         </Text>
         <Text as="p" size="medium">
-          Hello, from Next.js, Stitches, and Capsize!
+          {content}
         </Text>
         <Text as="p" size="small">
-          Hello, from Next.js, Stitches, and Capsize!
+          {content}
         </Text>
         <Text as="p" size="xsmall">
-          Hello, from Next.js, Stitches, and Capsize!
+          {content}
         </Text>
       </Stack>
-    </main>
+    </Main>
   );
 }
+
+const Main = styled("main", {
+  minHeight: "100vh",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+});
