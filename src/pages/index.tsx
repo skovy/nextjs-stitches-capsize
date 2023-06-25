@@ -16,6 +16,10 @@ export default function Home() {
         <Text size="medium">{content}</Text>
         <Text size="small">{content}</Text>
         <Text size="xsmall">{content}</Text>
+        <Text size="small" highlighted={false}>
+          This is a demo Next.js application using Stitches for styling and
+          Capsize for trimming typography.
+        </Text>
       </Stack>
     </Main>
   );

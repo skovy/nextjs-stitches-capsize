@@ -60,5 +60,10 @@ export const Text = styled("p", {
         ...createFontSizeVariant("xlarge"),
       },
     },
+    highlighted: {
+      false: {
+        background: "transparent",
+      },
+    },
   },
 });
